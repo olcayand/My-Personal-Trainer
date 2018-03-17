@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html class='mb-event' data-server-country='US' lang='en'>
+<head>
+<meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"87e900fa1e","applicationID":"30144493","transactionName":"c1cPRhZWXF5SSxgSX1FKCFwDFlFCRw==","queueTime":0,"applicationTime":13,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover' name='viewport'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='yes' name='mobile-web-app-capable'>
+<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+<meta content='webkit' name='renderer'>
+<meta content='#F55D54' name='theme-color'>
+<title>
+My Personal Trainer
+</title>
+<link href='images/icon_android.png' rel='icon' sizes='192x192'>
+<link href='images/icon_retina.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='images/icon_retina3x.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='images/icon_ipad.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='images/icon_ipad.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='/uploads2/splashes/17/178618/splash_1521294952.png' media='(device-width: 320px) and (device-height: 568px)' rel='apple-touch-startup-image'>
+<link href='/uploads2/splashes/17/178618/splash_1521294952.png' media='(device-width: 375px) and (device-height: 667px)' rel='apple-touch-startup-image'>
+<link href='/uploads2/splashes/17/178618/splash_1521294952.png' media='(device-width: 414px) and (device-height: 736px)' rel='apple-touch-startup-image'>
+<link href='/uploads2/splashes/17/178618/splash_1521294952.png' media='(device-width: 375px) and (device-height: 812px)' rel='apple-touch-startup-image'>
+<link href='/uploads2/splashes/17/178618/splash_1521294952.png' media='(device-width: 768px) and (device-height: 1024px)  and (orientation:portrait)' rel='apple-touch-startup-image'>
+<link href='/uploads2/splashes/17/178618/splash_1521294952.png' media='(device-width: 768px) and (device-height: 1024px)  and (orientation:landscape)' rel='apple-touch-startup-image'>
+<style>
+  html, body {
+    font-family: -apple-system, "SF UI Text", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    overflow: hidden;
+    height: 100%; }
+  
+  body {
+    background: whitesmoke;
+    color: #525e71; }
+    body.mobile {
+      height: 100vh;
+      background-color: white; }
+  
+  #download, #header {
+    display: none; }
+  
+  #notification {
+    position: fixed;
+    top: -70px;
+    left: 0; }
+  
+  .notice {
+    padding: 10px;
+    font-size: 14px; }
+    .notice p {
+      margin-bottom: 10px; }
+  
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(51, 54, 58, 0.6) transparent;
+    border-radius: 100%;
+    transform-origin: 50% 50% 0px;
+    -webkit-animation: mb-spin 0.8s infinite linear;
+    animation: mb-spin 0.8s infinite linear;
+    display: inline-block; }
+  
+  @-webkit-keyframes mb-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg); } }
+  
+  @keyframes mb-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg); } }
+  
+  #safemode, #logo, #device {
+    display: none; }
+  
+  #font-preload {
+    position: absolute;
+    top: -65535px;
+    left: -65535px;
+    font-size: 12px;
+    pointer-events: none; }
+    #font-preload .aw {
+      position: absolute;
+      width: auto;
+      white-space: nowrap; }
+    #font-preload .ah {
+      position: absolute;
+      height: auto;
+      word-break: break-word;
+      word-wrap: break-word; }
+      #font-preload .ah p {
+        margin-bottom: 5px;
+        white-space: pre-wrap; }
+        #font-preload .ah p:last-child {
+          margin-bottom: 0px; }
+  
+  #loading {
+    width: 86px;
+    height: 86px;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -43px;
+    text-align: center;
+    font-size: 12px; }
+    #loading .logo, #loading .indicator {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 86px;
+      height: 86px;
+      overflow: hidden;
+      background: url("images/logo-lg.svg");
+      background-size: 86px 86px; }
+    #loading .logo {
+      opacity: 0.3; }
+    #loading .indicator {
+      opacity: 1;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      height: 0%; }
+    #loading span {
+      position: absolute;
+      width: 300px;
+      left: 50%;
+      top: 110px;
+      margin-left: -150px;
+      font-size: 14px;
+      line-height: 28px;
+      color: #f77d77; }
+</style>
+<style>
+  ::-webkit-scrollbar-track {
+    background-color: transparent; }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #dedee4;
+    border-radius: 4px; }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent; }
+</style>
+
+<style>
+  #splash {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f0f0f2; }
+    #splash.is-landscape img {
+      top: 50%;
+      left: 50%;
+      width: 100vh;
+      height: 100vw;
+      transform: translate(-50%, -50%) rotate(-90deg); }
+    #splash img {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    #splash .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -15px;
+      margin-left: -15px; }
+</style>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hRwUu+io7qubNwyIdZ3yQWWKPzfzwl23p47HQf9z00oZHWFMSI8at8334pf4/ecddDBct6FkEsdnt913sCUCPw==" />
+</head>
+<body>
+<div id='font-preload'>
+<span class='dora'>check</span>
+<span class='md'>check</span>
+<span class='mb icon-save'></span>
+<span class='fa fa-user'></span>
+<div class='aw'></div>
+<div class='ah'></div>
+</div>
+<div id='loading'>
+<div class='logo'></div>
+<div class='indicator'></div>
+<span>
+loading My Personal Trainer...
+</span>
+</div>
+<div data-user='null' id='workspace'></div>
+<div class='safe-mask' id='safemode'>
+<div class='indicator restore'>
+<div class='spinner'></div>
+<div class='text'>
+This may take several minutes. How about a cup of tea…
+<span class='progress'>0%</span>
+</div>
+</div>
+</div>
+
+
+<script>
+  (function() {
+    window.MBLocale = 'en';
+  
+    window.I18N = {
+      "are_you_sure": "Are you sure?",
+      "choose_app": "Choose a prototype",
+      "hdistribute": "Distribute horizontally",
+      "vdistribute": "Distribute vertically",
+      "please_validate_email": "Please confirm your email",
+      "password_protection": "Upgrade to add password protection",
+      "duplicate_all": "Duplicate all sub-screens.",
+      "duplicate_parent_only": "Duplicate parent only.",
+      "choose_move_dst": "Move to",
+      "no_privilege": "Sorry, you don't have access privileges for this operation.",
+      "projects_count": "Projects",
+      "no_permission": "Sorry, you don't have permission to edit this master.",
+      "renew_now": "Upgrade Now",
+      "account_expired": "Renew required",
+      "create": "Create",
+      "setting": "Settings",
+      "update": "Update",
+      "delete": "Delete",
+      "edit": "Edit",
+      "archive": "Move to Archive",
+      "sharing": "Sharing",
+      "archived": "Archives",
+      "last_updated": "Last updated",
+      "support": "Support",
+      "carrier": "AT\u0026T",
+      "password": "Password",
+      "screen": "Screen",
+      "home": "Home",
+      "share": "Share",
+      "back": "Back",
+      "install": "Install",
+      "tap": "Tap",
+      "public": "Public",
+      "private": "Encrypted",
+      "got_it": "Got it",
+      "network_error": "Failed to contact server. Please check your network settings and try again.",
+      "unsupported": "Unsupported file type.",
+      "home_screen": "Home Screen",
+      "credential_required": "This app is protected. Please input your credentials:",
+      "state": "State",
+      "new": "New",
+      "widgets": "Widgets(1)",
+      "invalid_credential": "Sorry, that's an invalid credential. Please refresh to try again.",
+      "app_device": "Device type",
+      "app_type": "App type",
+      "icon": "Icon",
+      "splash": "Splash",
+      "size": "Size",
+      "target": "Target",
+      "png_only": "Please upload PNG file for Icon/Splash.",
+      "download": "Download",
+      "site_title": "MockingBot",
+      "wechat": "WeChat",
+      "choose_screen": "Choose screen to Nav",
+      "unsaved": "unsaved",
+      "timer": "Timer",
+      "no_timer": "Not set",
+      "type2search": "Search ",
+      "search_doc": "Search Doc",
+      "builtin": "Built-in",
+      "width": "W",
+      "height": "H",
+      "sticky": "Sticky",
+      "auto_scale": "Auto Scale",
+      "embed": "Embed",
+      "app_name": "Name",
+      "free_trial": "Free trial check pricing.",
+      "restricted": "White list",
+      "private_intro": "Anyone who knows the URL and password",
+      "restricted_intro": "Only collaborators",
+      "expired": "Expired",
+      "invalid_post": "Either content or an app is required.",
+      "left": "left",
+      "right": "right",
+      "top": "top",
+      "down": "down",
+      "name_copy": " Copy",
+      "in_progress": "This may take several minutes. How about a cup of tea…",
+      "screen_list": "Screen List",
+      "order_period": "Choose period",
+      "current_plan": "Current Plan",
+      "next_billing_on": "Next billing on",
+      "enterprise": "Enterprise",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "pro": "Collaboration",
+      "free": "Free",
+      "standard": "10-member team",
+      "startup": "5-member team",
+      "invalid_comment": "Sorry, the comment area can't be blank.",
+      "invalid_category": "Please choose a category.",
+      "widget_list": "Widget List",
+      "edit_team": "Edit team",
+      "team": "team",
+      "role": "Role",
+      "screens_count": "Screens",
+      "members_count": "Members",
+      "android.customize": "Customize",
+      "transfer": "Transfer",
+      "move": "Move",
+      "name": "Name",
+      "replace_image": "Replace",
+      "cancel": "Cancel",
+      "coupon": "Coupon",
+      "new_flow": "New flow",
+      "flow": "Flow",
+      "ipa_device": {
+        "modal_title": "Downloading IPA",
+        "add_success": "You've successfully added a device.",
+        "not_configured": "No installable device is available. Please ask your team administrator to add your device before proceeding.",
+        "reach_maximum": "Sorry, you've reached the maximum number of UDIDs for this project.",
+        "not_valid": "This does not appear to be a valid UDID. Please try again.",
+        "server_error": "Something went wrong with the server. Please contact us.",
+        "no_cert": "No valid Apple Developer certificates. Please contact us to find it.",
+        "not_enabled": "Downloading IPA files requires valid Development Certificates from Apple. Please contact \u003ca href=\"mailto:support@modao.cc\"\u003esupport@modao.cc\u003c/a\u003e to provide necessary information."
+      },
+      "go_to_account_settings": "Go to Settings",
+      "import": "Import",
+      "import_template": "Import master",
+      "choose_template_to_import": "Choose a master to import",
+      "full_view": "Full View",
+      "expand_all": "Expand all",
+      "apply_coupon": "Apply",
+      "notifications": {
+        "all": "Notifications",
+        "view_all": "View all",
+        "load_more": "Load more",
+        "request_permission": "We recommend enabling desktop notifications while using MockingBot on this computer.",
+        "enable_notification": "Enable notifications",
+        "ask_later": "Ask later",
+        "never_ask_again": "Never ask again",
+        "mark_all_as_read": "Mark all as read",
+        "empty": "No Notifications"
+      },
+      "loading": "loading",
+      "buy": "Buy",
+      "no_post": "There is no post here.",
+      "click2create": "Create one",
+      "login_to_vote": "Login to vote",
+      "web_signin": "Sign in",
+      "new_post": "New Post",
+      "choose_category": "Change category",
+      "project": "Project",
+      "account": {
+        "pay_success": "Paid successfully",
+        "reload_after_countdown": "The page will refresh in %ss",
+        "switch_plan": "Check Plan",
+        "renew": "Renew",
+        "scan_with_wechat": "Pay with WeChat QRCode",
+        "provided_by_pingxx": "The service is provided by the Ping++",
+        "reload": "Reload Now",
+        "save_17": "Save 17%",
+        "new_plan": "New Plan",
+        "new_billing_date": "New Billing Date",
+        "wechat_pay": "WeChat Pay",
+        "confirm_pay": "Confirm",
+        "pay": "Pay",
+        "discount": "Current Discount",
+        "account": "Account",
+        "plan": "Plan",
+        "period": "Period",
+        "price": "Price",
+        "balance_left": "Balance Left",
+        "next_billing_on": "Next Billing Date",
+        "new_next_billing_on": "Next Billing Date",
+        "amount": "Amount",
+        "order_period": "Choose Period",
+        "payment_gateway": "Gateway",
+        "billing_date": "Date",
+        "receipt": "Receipt",
+        "receipt_details": "Receipt Details",
+        "company_name": "Company Name",
+        "vat_id": "VAT/GST ID No.",
+        "address": "Address",
+        "receipt_confirmation": "Please make sure all information is correct",
+        "receipt_success": "Receipt is created successfully.",
+        "receipt_download": "Download",
+        "receipt_submit": "Submit",
+        "coupon_code": "Coupon Code",
+        "use": "Use",
+        "used_discount": "Using %off off coupon.",
+        "used_discount_saving": "Using %off off coupon, saving %saving.",
+        "payment_methods": "Payment Methods",
+        "actual_payment": "Pay Due",
+        "switch_new_plan": "Switch Plan",
+        "submit": "Submit",
+        "having_problem_title": "Having problems with the payment?",
+        "having_problem_desc": "Contact \u003ca href=\"mailto:support@mockingbot.com\"\u003esupport@mockingbot.com\u003c/a\u003e if you’re having problems with payment on Paypal. If you’re using the MockingBot desktop client, you can try paying from your desktop browser.",
+        "finished": "Successfully Paid",
+        "payment_error": "Error occurs while payment",
+        "no_team": "No Team"
+      },
+      "colon": ": ",
+      "open_quote": " “",
+      "close_quote": "” ",
+      "open_inner_quote": " ‘",
+      "close_inner_quote": "’ ",
+      "open_parenthesis": " (",
+      "close_parenthesis": ") ",
+      "reminder": "Reminder",
+      "warning": "Warning",
+      "close": "Close",
+      "confirm": "Confirm",
+      "done": "Done",
+      "old_electron_notice_title": "Update your MockingBot client",
+      "old_electron_notice_desc": "The version of this release of MockingBot is outdated, and unknown issues may exist. Please download and istall the latest version of MockingBot.",
+      "or": " or ",
+      "helpful": " Like ",
+      "contact_us": "Contact us ",
+      "no_more": "Nothing…",
+      "search_guides": "Search guides…",
+      "got_message": "Got a message",
+      "https_only": "Double click to edit URL (https only).",
+      "wait_for_saving": "This screen hasn't been saved yet. Please wait a moment and try again.",
+      "dblclick_to_edit": "Double-click to edit",
+      "transfer_screen": "Transfer Screen",
+      "exceed_screen_limit": "This project has reached the maximum 50K components and states. You won't be able to add more screens or states to this project. Create a new project to continue.",
+      "data_lost_warning": "Data is still being sent to the server; your changes will be lost if you close this page. Are you sure you want to quit?",
+      "regenerate": "Re-generate",
+      "delete_projects_first": "Please delete all projects for this team before proceeding.",
+      "auto_scale_tip": "Use auto-scale to fill different screens. e.g., Auto-scale for iPhone 5s will scale 1.17x to fit iPhone 6, and 1.29x to fit iPhone 6 plus. Cool, huh?",
+      "move_tips": "Create a copy and move it to the DST team.",
+      "no_joined_team": "It looks like you haven't joined a team yet.",
+      "shell_type": "Shell type",
+      "device_shell": "Real device",
+      "default_shell": "Default gray shell",
+      "none_shell": "None shell",
+      "default_shell_field": "Shell type",
+      "highlight_clickable": "Highlight clickable areas on the screen.",
+      "sharing_password": "Password (Optional)",
+      "master_preview": "Preview",
+      "load_project": "Loading project. Please wait a moment…",
+      "connect_to_push_server": "Connecting to push server, please make sure the firewall didn't block 5799 port…",
+      "unknown_error": "We're sorry, but something went wrong. Our team has been notified and will fix it just as soon as they can. Please reload this page to continue.\u003cbr\u003e\u003cbr\u003eError Code: %s",
+      "new_version_detected": "New version detected. Please refresh to continue.",
+      "file_too_large": "Image is too large",
+      "optimize_your_image": "Image file should be less than 1MB to get faster loading speed on mobile device. If you need to upload high resolution image, we recommand you use service like \u003ca href='http://tinypng.com' target='_blank'\u003etinypng.com\u003c/a\u003e to compress the image before uploading.",
+      "no_app": "It looks like you haven't built a project yet.",
+      "no_team": "It looks like you haven't set up a team yet.",
+      "no_team_app": "This team does not appear to have a project yet.",
+      "create_app_tips": "You can click here to create one.",
+      "create_team_tips": "Click here to create a team.",
+      "new_team": "Create Team",
+      "client_download": "MacOS and Windows client to download",
+      "tutorial_video": "MockingBot tutorials \u0026 videos",
+      "created_time": "Created At Asc",
+      "updated_time": "Updated At Desc",
+      "demo_author": "Author",
+      "my_apps": "Projects",
+      "team_apps": "Teams",
+      "forum": "Forum",
+      "all_teams": "All teams",
+      "created_teams": "My teams",
+      "joined_teams": "Joined teams",
+      "team_intro": "Learn more about teams.",
+      "liked": "Liked",
+      "karma": "Karma",
+      "edit_profile": "Edit Profile",
+      "public_projects": "Public Projects",
+      "my_posts": "My Posts",
+      "his_posts": "His/Her Posts",
+      "my_comments": "My Comments",
+      "his_comments": "His/Her Comments",
+      "sharing_app": "Share App",
+      "embed_app": "Embed Code",
+      "permission": "Permission",
+      "access_permission": "Access",
+      "preview_settings": "Preview Settings",
+      "embed_tips": "Embed in a website or blog by copying the code below:",
+      "view_in_browser": "Check here if you'd like play with the app directly, without the installation instructions.",
+      "functional_widgets": "Functional",
+      "locale_text": "中文",
+      "trial_expired": "Trial expired",
+      "expired_on": "Expired on %s",
+      "upgrade": "Upgrade",
+      "renew": "Renew",
+      "switch_plan": "Switch Plan",
+      "active": "Active",
+      "newbie_mission": "Newbie’s Missions",
+      "guide": "Guide",
+      "feature_update": "Updates",
+      "my_account": "Account",
+      "signout": "Sign out",
+      "setting_account": "Account",
+      "setting_plan": "Current Plan",
+      "setting_manage": "Manage",
+      "setting_switch": "更改显示语言为： 中文",
+      "apps": "Projects",
+      "teams": "Teams",
+      "logout": "Sign out",
+      "trial": "Trial",
+      "personal": "Personal",
+      "team20": "20-member team",
+      "tab_active": "Active",
+      "tab_archive": "Archive",
+      "tab_collaboration": "Joined",
+      "tab_my_teams": "My Teams",
+      "tab_joined_teams": "Joined Teams",
+      "no_apps": "No Project",
+      "no_apps_notification": "Use our website or our app for Windows/Mac to design projects online",
+      "no_apps_or": "Or",
+      "no_apps_starnote": "View A Sample Project",
+      "new_app": "Create Project",
+      "new_demo_app": "Edit Demo",
+      "new_blank_app": "New Project",
+      "blank_app": "Blank Project",
+      "use_demo": "Use Demo",
+      "preview_demo": "View Demo",
+      "template_app": "Templates",
+      "other_settings": "Other settings",
+      "all_apps": "All Projects",
+      "my_active_apps": "My Projects",
+      "others_apps": "'s Projects",
+      "inbox": "Move into Active",
+      "edit_screens": "Edit screens",
+      "view_app": "View Project",
+      "edit_workflows": "Edit workflows",
+      "view_workflows": "View workflow",
+      "upload_artboard_first": "This is a Sketch project, please upload an artboard from Sketch and try again.",
+      "workflow_unsupport_browser": "This feature is not supported in your browser. Please consider using MockingBot Client, or upgrade to latest Chrome browser.",
+      "download_mockingbot_client": "Download MockingBot Client",
+      "continue_anyway": "Continue Anyway",
+      "icon_and_splash": "Icon and splash",
+      "upload_icon": "Upload icon",
+      "upload_splash": "Upload splash",
+      "make_a_copy": "Make a copy",
+      "more_options": "More options",
+      "project_duplicated": "A copy of this project is being created. Please wait a moment, then reload.",
+      "project_duplicating": "Duplicating…",
+      "project_duplicate_failed": "Sorry, the duplication failed",
+      "team_name": "Team name",
+      "team_creator": "Creator",
+      "me_on_team": "My role",
+      "team_plan": "Plan",
+      "team_operation": "Operation",
+      "team_icon": "Team icon",
+      "team_color": "Team color",
+      "icon_and_color": "Icon and color",
+      "no_teams": "No Team",
+      "no_teams_notification": "Use our website or our app for Windows/Mac to create your team online!",
+      "collaboration": "Collaboration",
+      "collaborators": "Team members",
+      "manage_collaborators": "Manage members",
+      "view_collaborators": "View members",
+      "invite": "Invite",
+      "pending": "Pending",
+      "remove_me": "Leave",
+      "cant_invite_yourself": "Sorry, you can't invite yourself.",
+      "invalid_email": "Invalid email",
+      "owner_only": "Sorry, only the project owner or admin can invite new members.",
+      "already_invited": "Hey, it looks like you've already been invited. Lucky you!",
+      "exceed_collaborator_limit": "It appears that you've exceeded the maximum number of collaborators for your plan. Please upgrade to add more collaborators.",
+      "roles": {
+        "admin": "Administrator",
+        "admin_desc": "Admin",
+        "editor": "Designer",
+        "editor_desc": "Edit",
+        "viewer": "Reviewer",
+        "viewer_desc": "View",
+        "owner": "Owner"
+      },
+      "add_to": "Add to",
+      "custom": "Custom",
+      "custom_combo": "Custom",
+      "create_combo": "Add To Combos",
+      "lock_widget": "Lock",
+      "unlock": "Unlock",
+      "widgets_here": "Pick Widget",
+      "widgets_selected": "Selected Widgets",
+      "fixed_widget": "Fixed",
+      "error_project": "This project cannot be open because of abnormal data, please click to delete it.",
+      "recover": "Recover",
+      "no_deleted_screens": "The trash can is empty.",
+      "transh_can": "Trash Can",
+      "project_transh_can": "Project Trash Can",
+      "electron_upgrading_title": "Please download latest MockingBot Desktop",
+      "electron_upgrading_msg": "You need upgrade to latest version of MockingBot Desktop, \u003ca class='active-link' href='/downloads#secdesktop' target='_blank'\u003eclick here to start downloading\u003c/a\u003e.",
+      "export_method": "Download to…",
+      "download_export_file": "Download Now",
+      "html5_zip": "HTML5 ZIP [offline]",
+      "current_png": "Single PNG",
+      "current_pngs": "All PNGs",
+      "apk_file": "Android APK",
+      "prepare_downloading": "Preparing your files…",
+      "your_file_is_ready": "Problems with the download? Please click the download button.",
+      "ipa_building_starts": "We’ve started building your iOS app. You’ll receive an email with more information while finished.",
+      "no_ios_certificate": "No Apple iOS distribution certificate available.",
+      "electron_download_alert": "Problems with the download? Please try to download it from a browser.",
+      "ios_offline": "iOS IPA",
+      "generate_ipa": "Generate App",
+      "prepared": "Done!",
+      "original_scale": "1x",
+      "2x_scale": "2x",
+      "operate": "Operate",
+      "save": "Save",
+      "saving": "Saving",
+      "saved": "Saved",
+      "save_tip": "Save (ctrl+S)",
+      "undo": "Undo",
+      "undo_tip": "Undo (ctrl+Z)",
+      "redo": "Redo",
+      "redo_tip": "Redo (ctrl+Y)",
+      "cut": "Cut",
+      "cut_tip": "Cut (ctrl+X)",
+      "copy": "Copy",
+      "copy_tip": "Copy (ctrl+C)",
+      "paste": "Paste",
+      "paste_tip": "Paste (ctrl+V)",
+      "paste_directly": "paste Directly",
+      "paste_to_point": "paste to Cursor",
+      "send_front": "Send Front",
+      "send_back": "Send Back",
+      "forward": "Forward",
+      "backward": "Backward",
+      "preference": "View",
+      "link_line": "Links",
+      "grid": "Grid",
+      "ruler": "Ruler",
+      "lock": "Lock",
+      "export": "Download",
+      "rotate": "Rotate",
+      "layout": "Layout",
+      "assets": "Assets",
+      "align": "Align",
+      "hleft": "Left Alignment",
+      "hleft_tip": "Left Alignment (ctrl+alt+L)",
+      "hcenter": "Horizontal Center",
+      "hcenter_tip": "Horizontal Center (ctrl+alt+C)",
+      "hright": "Right Alignment",
+      "hright_tip": "Right Alignment (ctrl+alt+R)",
+      "vtop": "Top Alignment",
+      "vtop_tip": "Top Alignment (ctrl+alt+T)",
+      "vcenter": "Vertical Center",
+      "vcenter_tip": "Vertical Center (ctrl+alt+V)",
+      "vbottom": "Bottom Alignment",
+      "vbottom_tip": "Bottom Alignment (ctrl+alt+B)",
+      "distribute": "Distribute",
+      "hdistribute_tip": "Distribute horizontally (ctrl+shift+H)",
+      "vdistribute_tip": "Distribute vertically (ctrl+shift+U)",
+      "group": "Group",
+      "group_tip": "Group (ctrl+G)",
+      "ungroup": "Ungroup",
+      "ungroup_tip": "Ungroup (ctrl+U)",
+      "landscape": "Landscape",
+      "portrait": "Portrait",
+      "zoomin": "Zoom In",
+      "zoomout": "Zoom Out",
+      "workflow": "Workflow",
+      "inspect": "Handoff",
+      "launch": "Preview",
+      "hide": "Hide",
+      "font_size": "Text",
+      "bold": "Bold",
+      "italic": "Italic",
+      "underline": "Underline",
+      "line_through": "Line Through",
+      "text_color": "Text Color",
+      "h_align": "Horizontal Alignment",
+      "v_align": "Vertical Alignment",
+      "color": "Color",
+      "widget": "Widget",
+      "master": "Master",
+      "combo": "Combo",
+      "search_icon": "Search Icon",
+      "search_master": "Search Master",
+      "search_combo": "Search Combo",
+      "beginner_guide": "Guide",
+      "shortcuts": "Shortcuts",
+      "cant_delete_template": "Can't delete this master. Please delete all instances of this master first.",
+      "watch_tutorial": "Watch Tutorial",
+      "drag_widgets_2create": "Drag widgets to create a combo",
+      "expand": "Expand",
+      "fold": "Fold",
+      "tutorial": "Tutorial",
+      "device_libraries": "Device Libraries",
+      "combos": {
+        "ios": {
+          "navigation_bar": "NavBar",
+          "navbar_with_icons": "NavBar with \u003cbr/\u003e icons",
+          "navbar_with_subtitle": "NavBar with \u003cbr/\u003e subtitle",
+          "tabs_4": "Tabbar4",
+          "tabs_5": "Tabbar5",
+          "safari": "Safari",
+          "search_bar": "Search",
+          "status_bar": "Statusbar",
+          "segmented_control_2": "Segmented \u003cbr/\u003e Control2",
+          "segmented_control_3": "Segmented \u003cbr/\u003e Control3",
+          "ios_switch": "Switch",
+          "ios_check": "Checkbox",
+          "slider": "Slider",
+          "list_with_value": "List with \u003cbr/\u003e Value",
+          "list_with_thumb": "List with \u003cbr/\u003e Thumb",
+          "control_popover": "Control \u003cbr/\u003e Popover",
+          "message": "Message",
+          "alert": "Alert",
+          "prompt": "Prompt",
+          "vertical_alert": "Vertical Alert",
+          "action_sheet": "Action Sheet",
+          "quick_actions": "Quick Actions",
+          "notification": "Notification",
+          "widget_base": "Widget Base",
+          "keyboard": "Keyboards"
+        },
+        "android": {
+          "app_bar": "AppleBar",
+          "app_bar_2": "AppBar2",
+          "navbar": "NavBar",
+          "status_bar": "Statusbar",
+          "search": "Search",
+          "button": "Button",
+          "android_check": "Checkbox",
+          "android_radio": "Radio button",
+          "android_switch": "Switch",
+          "slider": "Slider",
+          "fab": "Fab",
+          "menu": "Menu",
+          "list": "List",
+          "list_with_icons": "List with \u003cbr/\u003e icon",
+          "dialog": "Dialog",
+          "dialog_with_title": "Dialog with \u003cbr/\u003e Title",
+          "list_sheet": "List Sheet",
+          "grid_sheet": "Grid Sheet",
+          "notification": "Notification",
+          "interactive_notification": "Interactive \u003cbr/\u003e Notification",
+          "keyboard": "Keyboards"
+        }
+      },
+      "no_icons": "There's no icons",
+      "no_result_found": "There's no result",
+      "icons": {
+        "recent": "Recent",
+        "all": "All",
+        "transportation": "Transport",
+        "video_player": "Media",
+        "form_control": "Form",
+        "accessibility": "A11y",
+        "communication": "Comm.",
+        "miscellaneous": "Others",
+        "text_editor": "Editor",
+        "web_app": "Web App",
+        "directional": "Direction"
+      },
+      "w": {
+        "label": "Label",
+        "text_view": "Text",
+        "icon_button": "Icon",
+        "image_view": "Image",
+        "button": "Button",
+        "mtooltip": "Tooltip",
+        "webpage": "Webpage",
+        "pg": "Gesture",
+        "lr": "Link Area",
+        "sticky": "Sticky",
+        "rounded_rect": "Rect",
+        "circle_rect": "Oval",
+        "hr": "Line",
+        "ve": "Line",
+        "triangleb": "Triangle",
+        "triangletl": "Triangle",
+        "mtext_input": "Text Input",
+        "mtextarea": "Text Area",
+        "ios_check": "Checkbox",
+        "android_check": "Checkbox",
+        "android_radio": "Radio",
+        "mcheckbox2": "Checkbox",
+        "mradiobutton": "Radio",
+        "mselect": "Droplist",
+        "mfile_input": "File Input",
+        "switch": "Switch",
+        "ios_switch": "Switch",
+        "android_switch": "Switch",
+        "navigation_bar": "Nav Bar",
+        "tab_bar": "Tab Bar",
+        "rectangle": "List Item",
+        "search_bar": "Search Bar",
+        "tab_item": "Tab Item",
+        "map_view": "Map",
+        "keyboard": "Keyboard",
+        "status_bar": "Status Bar",
+        "panel": "Panel",
+        "group": "Group",
+        "navbar_title": "Title",
+        "search": "Search",
+        "return": "return",
+        "carrier": "AT\u0026T",
+        "text_view_placeholder": "If you can't explain it simply you don't understand it well enough.\n -- Albert Einstein"
+      },
+      "duplicate": "Duplicate",
+      "paste_to_cursor": "Paste to cursor position",
+      "move_left": "Move left",
+      "move_right": "Move right",
+      "move_up": "Move up",
+      "move_down": "Move down",
+      "shrink_all": "Shrink all",
+      "toggle_left_panel": "Toggle L panel",
+      "toggle_right_panel": "Toggle R panel",
+      "click": "Click",
+      "select_one": "Single Select",
+      "append_select": "Append Select",
+      "partial_select": "Partial Select",
+      "mouse_region": "Region by mouse",
+      "select_all": "Select All",
+      "link_back": "Prev Screen",
+      "click_to_origin": "back to origin",
+      "last_saved": "Last saved",
+      "all_saved": "done",
+      "back_to_workspace": "Workspace",
+      "link_to_prev": "Link to Prev",
+      "screen_bgcolor": "Set background color",
+      "screen_bgimage": "Set background image",
+      "sketch_screen_tip": "Please adjust height in Sketch and re-upload",
+      "drag_to_resize": "Drag to resize",
+      "drag_to_link_screen": "Drag the circle to link screens.",
+      "drag_to_create_screen": "Drag image files here to create new screen(s).",
+      "whats_this": "What's this?",
+      "slider_desc": "The two sliders shown beside the screen designer are used to control the height of your app's header and footer. All widgets or images in the header and footer will have a fixed position when moving between screens.",
+      "link_back_desc": "Drag a 'link circle' here to create a switching view trigger. When this link is triggered, the app can switch to a previous view.",
+      "select_panel_states": "Choose a state to link",
+      "state_link_tutorial": "Master link tutorial",
+      "template_screen": "Master State",
+      "new_state": "New State",
+      "search_state": "Search State",
+      "global_state": "Global State",
+      "default_state": "Default State",
+      "global_state_link_error": "Sorry, you can't create a state link in the global state.",
+      "panel_state_link_error": "Sorry, you can't create a state link in a master.",
+      "new_screen": "New Screen",
+      "search_screen": "Search Screen",
+      "list_view": "List view",
+      "thumbnail_view": "Thumbnail view",
+      "not_support_level_5": "Does not support level 5 pages",
+      "remove_parent_only": "Remove parent only.",
+      "remove_all": "Remove parent and all subs.",
+      "remove_parent_state_only": "Remove parent only.",
+      "remove_all_state": "Remove parent and all subs.",
+      "cant_remove_screen": "You need at least 1 screen.",
+      "cant_remove_template_state": "You need at least 1 state.",
+      "screen_trash_can": "Screen Trash Can",
+      "component": "Component",
+      "main_panel": "Inspector Panel",
+      "menu_offset": "Menu(%)",
+      "reset_target_screen": "Reset target screen to initial state",
+      "images": "images",
+      "hidden": "Hidden (V)",
+      "locked": "Locked (L)",
+      "layer": "Layer",
+      "fill": "Fill",
+      "icon_color": "Icon Color",
+      "stroke": "Stroke",
+      "stroke_color": "Stroke Color",
+      "fg_color": "Foreground Color",
+      "bg_color": "Background",
+      "border": "Border",
+      "border_style": "Border Style",
+      "border_color": "Border Color",
+      "border_width": "Border Width",
+      "shadow": "Shadow",
+      "shadow_color": "Shadow Color",
+      "drop_shadow": "Drop Shadow",
+      "text_shadow": "Text Shadow",
+      "input_types": {
+        "text": "Text",
+        "number": "Number",
+        "search": "Search",
+        "password": "Password",
+        "date": "Date",
+        "time": "Time",
+        "datetime": "Datetime"
+      },
+      "inspector": {
+        "position": "Appearance",
+        "rotate": "Rotate",
+        "radius": "Radius",
+        "is": "Icon Size",
+        "o": "Opacity",
+        "input_type": "Keyboard",
+        "circularize": "Circle",
+        "squareize": "Square",
+        "checked": "Checked",
+        "fixed": "Fixed Position",
+        "not_fixed": "Not Fixed",
+        "fixed_auto": "Auto Detect Relative",
+        "fixed_top": "Relative to Top",
+        "fixed_bottom": "Relative to Bottom",
+        "main_state": "Main State",
+        "text": "Text",
+        "content": "Text",
+        "paragraph": "Para",
+        "line_height": "Line Height",
+        "padding": "Padding",
+        "image": "Image",
+        "p": "Zoom Proportional",
+        "drag_image_here": "Drag image here or click",
+        "upload_image": "upload",
+        "manage_image": "manage images",
+        "reset": "reset",
+        "clip": "Clip",
+        "filter": "Filter",
+        "blur": "blur",
+        "grayscale": "grayscale",
+        "sepia": "sepia",
+        "brightness": "brightness",
+        "contrast": "contrast",
+        "hue_rotate": "hue rotate",
+        "invert": "invert",
+        "saturate": "saturate",
+        "state": "Animation",
+        "show_case": "Show Case",
+        "animation": "Animation",
+        "ani_delay": "Delay",
+        "ani_duration": "Duration",
+        "ani_count": "Repeat",
+        "kbd_style": "Keyboard",
+        "text_kbd": "Text",
+        "numeric_kbd": "Numeric",
+        "tt_placement": "Placement",
+        "tt_offset": "Triangle Offset",
+        "tt_arrow_size": "Triangle Size"
+      },
+      "ani": {
+        "none": "none",
+        "attention_seekers": "Attention Seekers",
+        "bouncing_entrances": "Bouncing Entrances",
+        "flippers": "Flippers",
+        "rotating_entrances": "Rotating Entrances",
+        "sliding_entrances": "Sliding Entrances",
+        "zoom_entrances": "Zoom Entrances",
+        "specials": "Specials",
+        "bounce": "bounce",
+        "fadeIn": "fadeIn",
+        "fadeOut": "fadeOut",
+        "flash": "flash",
+        "pulse": "pulse",
+        "rubberBand": "rubberBand",
+        "shake": "shake",
+        "swing": "swing",
+        "tada": "tada",
+        "wobble": "wobble",
+        "jello": "jello",
+        "bounceIn": "bounceIn",
+        "bounceInDown": "bounceInDown",
+        "bounceInLeft": "bounceInLeft",
+        "bounceInRight": "bounceInRight",
+        "bounceInUp": "bounceInUp",
+        "flipInX": "flipInX",
+        "flipInY": "flipInY",
+        "spinning": "spinning(clockwise)",
+        "spinning-reverse": "spinning(counter clockwise)",
+        "rotateIn": "rotateIn",
+        "rotateInDownLeft": "rotateInDownLeft",
+        "rotateInDownRight": "rotateInDownRight",
+        "rotateInUpLeft": "rotateInUpLeft",
+        "rotateInUpRight": "rotateInUpRight",
+        "slideInDown": "slideInDown",
+        "slideInLeft": "slideInLeft",
+        "slideInRight": "slideInRight",
+        "slideInUp": "slideInUp",
+        "zoomIn": "zoomIn",
+        "zoomInDown": "zoomInDown",
+        "zoomInLeft": "zoomInLeft",
+        "zoomInRight": "zoomInRight",
+        "zoomInUp": "zoomInUp",
+        "rollIn": "rollIn",
+        "lightSpeedIn": "lightSpeedIn"
+      },
+      "link_settings": "Gesture \u0026 Transition Panel",
+      "tr": {
+        "none": "None",
+        "slideleft": "R Slide",
+        "slideright": "L Slide",
+        "slidebottom": "B Slide",
+        "slidetop": "T Slide",
+        "leftmenu": "L Menu",
+        "rightmenu": "R Menu",
+        "leftdrawer": "L Drawer",
+        "rightdrawer": "R Drawer",
+        "slideleft2": "L Push",
+        "slideright2": "R Push",
+        "popin": "B Push",
+        "topin": "T Push",
+        "leftout": "L Pop",
+        "rightout": "R Pop",
+        "popout": "B Pop",
+        "topout": "T Pop"
+      },
+      "g": {
+        "tap": "Tap",
+        "left": "Swipe Left",
+        "right": "Swipe Right",
+        "up": "Swipe Up",
+        "down": "Swipe Down",
+        "hold": "Tap and Hold",
+        "dtap": "Double Tap",
+        "shake": "Shake",
+        "timer": "Timer",
+        "vscroll": "Vertical Scroll"
+      },
+      "animate": "Animate",
+      "ani_name": "Animation",
+      "ani_delay": "Delay",
+      "ani_duration": "Duration",
+      "ani_count": "Iteration",
+      "none": "None",
+      "default": "Default",
+      "infinite": "Infinite",
+      "asset_search": "Search Image",
+      "all_assets": "All Images",
+      "my_assets": "My Images",
+      "current_project": "Current Project",
+      "my_project": "My Projects",
+      "created_project": "Created Projects",
+      "archived_project": "Archived Projects",
+      "collaborate_project": "Collaborators' Projects",
+      "team_project": "Team Projects",
+      "tags": "Tags",
+      "tag_name": "Tag Name",
+      "manage": "Manage",
+      "finish": "Finish",
+      "create_tag": "New Tag",
+      "type_tag_name": "Input tag name",
+      "tags_placeholder": "Select an image to add tag",
+      "no_selected": "No image chosen",
+      "no_assets": "There's no image here, click the lower right corner to upload",
+      "insert_to_current": "Insert",
+      "insert_succeeded": "Insert succeeded",
+      "drag_image_here": "Drag image here or ",
+      "upload": "upload",
+      "storage": "Storage",
+      "screen_transh_can": "Screen Trash Can",
+      "default_color": "Default Colors",
+      "history_color": "History Colors",
+      "prev_step": "Prev",
+      "next_step": "Next",
+      "step_1_title": "The Component Panel",
+      "step_1_desc": "Fast design your UI with simply dragging \u0026 dropping components to the canvas.",
+      "step_2_title": "The Design Area",
+      "step_2_desc": "Drag components into the device frame. You can adjust the position and appearance of your components to fulfill your design task.",
+      "step_3_title": "The List Area",
+      "step_3_desc": "You can link the component with a specified screen to add interaction and navigation.",
+      "step_4_title": "Run Your Project",
+      "step_4_desc": "we support to use a simulator interface to help you visualize the project prototype just like on a real device.",
+      "step_5_title": "The Screen Trash Can",
+      "step_5_desc": "You can find and restore accidentally deleted screens here.",
+      "step_6_title": "Guides",
+      "step_6_desc": "Let's go through our official guides, it should be able to solve most of the problems you may meet later.",
+      "preview": {
+        "preview": "Preview",
+        "pages": "pages",
+        "images": "images",
+        "colors": "colors",
+        "search": "Search page",
+        "powered_by_modao": "Made with MockingBot",
+        "guide_login": "Sorry, Please login first",
+        "client_load_a": "Download MockingBot",
+        "client_load_tip": "for better experience",
+        "setting": "Setting",
+        "share": "Share",
+        "image_mode": "thumbnail",
+        "list_mode": "list",
+        "color_picker": "color picker",
+        "comment": {
+          "add_comment": "Add comment",
+          "switch": "Comment Mode",
+          "tip": "Double-click to add a new comment.",
+          "tip_signin": "Please sign in to add a new comment.",
+          "tip_not_collaborator": "Ask the project owner to add you as collaborator to comment.",
+          "panel": " Comment",
+          "thread_create": "Add",
+          "thread_delete_confirm": "Remove this comment forever?",
+          "thread_none": "No comment",
+          "thread_none_tip": "To add a comment, double-click on the board, or use the button below.",
+          "thread_none_tip_signin": "Sign-in to add comment",
+          "comment_placeholder": "Shift + Enter for a new line",
+          "comment_create": "Reply",
+          "comment_create_initial": "Create",
+          "comment_create_initial_title": "Create comment",
+          "comment_delete_confirm": "Remove this reply forever?",
+          "modify_edit": "Edit",
+          "modify_delete": "Delete",
+          "cancel_reply": "Cancel",
+          "reply": " Reply",
+          "reply_none": "no reply",
+          "reply_none_tip": "Please add your message below.",
+          "reply_new": " new",
+          "reply_new_thread": "New",
+          "divider_new": "New reply",
+          "show_all_0": "Show ",
+          "show_all_1": " more",
+          "tag_edited": "Edited",
+          "unfold": "Unfold",
+          "fold": "Fold",
+          "updateEdit": "Save",
+          "cancelEdit": "Cancel"
+        },
+        "screen": {
+          "panel": "Screen panel",
+          "total_page": "Total screen count"
+        }
+      },
+      "preview_panel": {
+        "global_attr": "Global Attributes",
+        "pick_color": "Picker Color",
+        "screen_color": "Screen Color",
+        "sketch_color": "Sketch Color",
+        "basic_attribute": "Basic Attribute",
+        "color_title": "Color",
+        "font_title": "Font",
+        "position": "Position",
+        "opacity": "Opacity",
+        "rotation": "Rotation",
+        "_x": "X",
+        "_y": "Y",
+        "size": "Size",
+        "font": "Font",
+        "content": "Content",
+        "align": "Align",
+        "horizontal_align": "horizontal",
+        "vertical_align": "vertical",
+        "line_height": "Line Height",
+        "type_face": "Typeface",
+        "font_size": "Size",
+        "font_style": "Style",
+        "graph": "Spacing",
+        "letter_spacing": "Character",
+        "comment": "Comment",
+        "thread_sum": "Total comment count",
+        "developer_mode": "Handoff",
+        "text": "Text",
+        "offset": "Offset",
+        "length": "Length",
+        "fills": "Fills",
+        "width": "Width",
+        "height": "Height",
+        "borders": "Borders",
+        "border_radius": "Radius",
+        "thickness": "Thickness",
+        "color": "Color",
+        "gradient": "Gradient",
+        "inner_shadow": "Inner shadow",
+        "shadow": "Shadows",
+        "blur": "Blur",
+        "spread": "Spread",
+        "type": "Type",
+        "copied": "Copied!",
+        "layer_name": "Layer",
+        "export": "Download Slice",
+        "download_single": "Download",
+        "download": "Download all",
+        "defaultPixel": "Standrad",
+        "devices": "Devices",
+        "points": "Points",
+        "retina": "Retina",
+        "reinaHD": "Retina HD",
+        "web": "Web View",
+        "no_slice": "No slice in current project",
+        "slice_in_sketch": "You can try to slice images in Sketch",
+        "download_sketch": "Download Sketch plugin",
+        "not_incurrent_screen": "Slice not in current screen",
+        "not_match": "Not match"
+      },
+      "email_placeholder": "Click to enter email",
+      "no_search_result": "No search result",
+      "check_pricing": "Check Pricing",
+      "renew_prompt": {
+        "title": "This is a paid feature",
+        "user_plan": "Your current plan is {plan}, ",
+        "user_expired": "Your subsciption has expired, ",
+        "project_plan": "The owner of this project is in {plan} plan, ",
+        "project_expired": "The account of this project has expired, ",
+        "team_plan": "The team of this project is in {plan} plan, ",
+        "team_expired": "The team of this project has expired, ",
+        "user_upgrade": "please upgrade to remove this limit.",
+        "project_upgrade": "please ask project owner to upgrade to remove this limit.",
+        "team_upgrade": "please ask team owner to upgrade to remove this limit.",
+        "user_renew": "please renew to remove this limit.",
+        "project_renew": "please ask project owner to renew to remove this limit.",
+        "team_renew": "please ask team owner to renew to remove this limit.",
+        "user_projects": "and you can create up to 3 projects, ",
+        "new_team_project": "and you can't create team project, ",
+        "dup_team_project": "and you can't duplicate team project, ",
+        "storage": "which includes {storage} storage, you've exceeded the limit, ",
+        "screens": "you can add up to 20 screens per project, ",
+        "exportable": "which does not support downloading to {format}, ",
+        "inspectable": "which does not support Inspect Mode, ",
+        "slices": "which does not support slice downloading, ",
+        "collaboration": "and can't edit this project, ",
+        "collaborators": "and you can invite up to {collaborators} collaborators, ",
+        "cant_invite": "which does not support adding collaborators, ",
+        "cant_move": "and you can't move project into this team, ",
+        "cant_comment": "which does not support commenting, "
+      },
+      "error_happened": "Something went wrong",
+      "font_size_issue": "It seems that your browser has restricted the minimum font size for display. We recommend you disable such setting to allow text to display correctly.",
+      "know_how": "Know How",
+      "global_state_alert": "\u003cp class=\"desc\"\u003eYou have more than one screen state. Please switch to global state (state 0) to add a new widget.\u003c/p\u003e \u003cp class=\"desc\"\u003e\u003cstrong\u003eNotice:\u003c/strong\u003e Changes in global state will be synced to all states.\u003c/p\u003e \u003cp class=\"desc\" style=\"margin: 2em 0 -1em; text-align: center;\"\u003e\u003cimg src=\"images/workspace/global_state_en.png\" width=\"116\"\u003e\u003c/p\u003e\n",
+      "gesture_conflict": "Gesture conflict detected.",
+      "vertical_conflict": "Swipe up/down gesture conflicts with vertical scrolling. Vertical scrolling will be disabled on this screen.",
+      "horizontal_conflict": "Swipe left/right gesture conflicts with horizontal scrolling. Horizontal scrolling will be disabled on this screen.",
+      "del_app_title": "Delete project",
+      "del_app_desc": "\u003cp class=\"desc\"\u003eAre you sure you want to delete project \u003cspan class=\"quote question\"\u003e\u003cspan class=\"project-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e \u003cp class=\"desc tertiary\"\u003e\n  You can recover the project in\n  \u003cspan class=\"recycle\"\u003e\n    \u003cspan class=\"icon-recycle\"\u003e\u003c/span\u003e\n    Trash Can\n  \u003c/span\u003e after the deletion in 2 weeks.\n\u003cp\u003e\n",
+      "fraud_warning": "\u003cp class=\"desc\"\u003e\u003cstrong\u003eThis demo is made with MockingBot, an online tool to make interactive prototypes.\u003c/strong\u003e\u003c/p\u003e \u003cp class=\"desc\"\u003eAny request for you to transfer money or buy license code is fraud. \u003ca href=\"https://modao.cc\"\u003emodao.cc\u003c/a\u003e is our only payment platform, and we’re not responsible for your loss caused in unofficial channels.\u003c/p\u003e \u003cp class=\"desc\"\u003ePaid users can remove this note.\u003c/p\u003e\n",
+      "fraud_confirm": "Yes, I see",
+      "exit_app_title": "Exit project",
+      "exit_app_desc": "Are you sure you want to exit project \u003cspan class=\"quote question\"\u003e\u003cspan class=\"project-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "dup_app_title": "Duplicate Project",
+      "dup_app_desc": "Are you sure you want to duplicate project \u003cspan class=\"quote question\"\u003e\u003cspan class=\"project-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "move_app_title": "Move Project",
+      "move_app_desc": "Move project \u003cspan class=\"quote\"\u003e\u003cspan class=\"project-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e to other team.",
+      "del_team_title": "Delete Team",
+      "del_team_desc": "Are you sure you want to delete team \u003cspan class=\"quote question\"\u003e\u003cspan class=\"team-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "exit_team_title": "Exit Team",
+      "exit_team_desc": "Are you sure you want to exit team \u003cspan class=\"quote question\"\u003e\u003cspan class=\"team-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "del_collaborator_title": "Delete Team Member",
+      "del_collaborator_desc": "Are you sure you want to delete team member \u003cspan class=\"quote question\"\u003e\u003cspan class=\"user-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "del_screen_title": "Delete Screen",
+      "del_screen_desc": "Are you sure you want to delete screen \u003cspan class=\"quote question\"\u003e\u003cspan class=\"widget-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "del_parental_screen_desc": "There is/are \u003cb\u003e%count sub-screen(s)\u003c/b\u003e in \u003cspan class=\"quote comma\"\u003e\u003cspan class=\"widget-name\"\u003e%name\u003c/span\u003e\u003c/span\u003e would you like to:",
+      "del_state_title": "Delete State",
+      "del_state_desc": "Are you sure you want to delete state \u003cspan class=\"quote question\"\u003e\u003cspan class=\"widget-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "del_parental_state_desc": "There is/are \u003cb\u003e%count sub-state(s)\u003c/b\u003e in \u003cspan class=\"quote comma\"\u003e\u003cspan class=\"widget-name\"\u003e%name\u003c/span\u003e\u003c/span\u003e would you like to:",
+      "dup_screen_title": "Duplicate Screen",
+      "dup_parental_screen_desc": "There is/are \u003cb\u003e%count sub-screen(s)\u003c/b\u003e in \u003cspan class=\"quote comma\"\u003e\u003cspan class=\"widget-name\"\u003e%name\u003c/span\u003e\u003c/span\u003e would you like to:",
+      "del_master_title": "Delete Master",
+      "del_master_desc": "Are you sure you want to delete master \u003cspan class=\"quote question\"\u003e\u003cspan class=\"widget-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "del_combo_title": "Delete Combo",
+      "del_combo_desc": "Are you sure you want to delete combo \u003cspan class=\"quote question\"\u003e\u003cspan class=\"widget-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e",
+      "unsaved_title": "Quiting %type with unsaved changes",
+      "unsaved_desc": "There are unsaved changes in %type \u003cspan class=\"quote comma\"\u003e\u003cspan class=\"project-name\"\u003e%name\u003c/span\u003e\u003c/span\u003e are you sure you want to quit?",
+      "unsaved_confirm": "Save and Exit",
+      "transfer_screen_title": "Transfer Screen",
+      "transfer_screen_desc": "Transfer screen \u003cspan class=\"quote\"\u003e\u003cspan class=\"widget-name\"\u003e%s\u003c/span\u003e\u003c/span\u003e to other project.",
+      "export_unsaved_title": "Unsaved Changes",
+      "export_unsaved_desc": "The project \u003cspan class='quote comma'\u003e\u003cspan class='project-name'\u003e%name\u003c/span\u003e\u003c/span\u003e hasn't been saved yet. Please wait a moment and try again.",
+      "export_unsaved_confirm": "Save and Download",
+      "regenerate_url_title": "Re-generate URL",
+      "regenerate_url_desc": "This will re-generate the sharing URL of this project and the old one will no longer be valid. Are you sure you want to proceed?",
+      "open_in_browser": "Open in broswer",
+      "open_in_client": "Open in client",
+      "download_android_apk": "Download Android APK",
+      "add_to_home_screen": "Add to Home screen",
+      "download_ios": "Get MockingBot Player on App Store",
+      "download_android": "Get MockingBot Player on Google Play",
+      "building_apk": "Building your APK…"
+    };
+  
+  }).call(this);
+</script>
+
+<link rel="stylesheet" media="screen" href="webpack/font-icons-19a7d6412f1307b59ad8bb61ad16cd9b.css" />
+<link href='css/roboto.css' media='screen' rel='stylesheet'>
+
+<link rel="stylesheet" media="screen" href="assets/sharing-ec83675777a30056ecd7a53215af5306.css" />
+<link rel="stylesheet" media="screen" href="webpack/lib-preview-d5e0361eb109baa59d6726345c50164a.css" />
+<link rel="stylesheet" media="screen" href="webpack/preview-21c7c694454cdfa2c644a563bb8562b5.css" />
+<script>
+  var webpackManifest = {"0":"vendor.js","1":"lib-preview.js","2":"account.js","3":"workspace.js","4":"event.js","5":"projectflow.js","6":"landing.js","7":"mobile.js","8":"notifications.js","9":"forum.js","10":"dashboards.js","11":"snapshot.js","12":"guides.js","13":"vendor-jquery.js","14":"constant.js","15":"faq.js","16":"preview.js","17":"font-icons.js","18":"landing-for-app.js"}
+  var MBServer = 'mockingbot.com'
+  document.getElementsByClassName('indicator')[0].style.height = '30%'
+</script>
+<script src="webpack/manifest-4aad80ef82188ed7cc26.js"></script>
+<script src="webpack/vendor-jquery-8375aa7573a3b4b419cb.js"></script>
+<script src="webpack/vendor-96a311c34d761715b481.js"></script>
+<script src="assets/sharing-84fb7dd8c7906ea4f47f5e8c469f9c91.js"></script>
+<script src="webpack/lib-preview-c329f169e480bcccba24.js"></script>
+<script src="webpack/preview-d6ed3abb4184948e1988.js"></script>
+<script>
+  $(function () {
+    if (MB.isMobile()) {
+      $('body').addClass('mobile')
+      MB.ga('send', 'event', 'goal', '在移动端打开了应用')
+    }
+    var isShowInstaller = !MB.isStandAlone() && !false && MB.isMobile() && !window.MBData
+    MB.load('rrRpI5ui3F0pDQv8ijDjgWpXZOPWEUs', false, '', isShowInstaller, {"name":"My Personal Trainer","accessToken":"rrRpI5ui3F0pDQv8ijDjgWpXZOPWEUs","iconUrl":"images/icon_retina3x.png","userPlan":"pro","updatedAt":"2018-03-17T10:10:07-04:00","exportable":true,"passwordRequired":false,"password":null,"ios_client_url":"https://itunes.apple.com/cn/app/mockingbot/id1050565468?ls=1\u0026mt=8","android_client_url":"http://a.app.qq.com/o/simple.jsp?pkgname=com.mockingbot"})
+  })
+</script>
+
+</body>
+</html>
+<script src="data/project.json"></script>
+<script src="data/artboards.json"></script>
